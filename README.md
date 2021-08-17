@@ -30,7 +30,7 @@ More info in the [Quick Start Guide](https://www.gurobi.com/documentation/curren
 The `gurobi/python-example` image provides a simple example to use the `gurobi/python` as a base Docker image with the 
 Gurobi Web License Service:
 - The docker used to build this image gives a quick example of a [Dockerfile](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/Dockerfile)
-- The [code](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/matrix1.py)) in Python setup the WLS license 
+- The [code](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/matrix1.py) in Python sets up the WLS license 
 - The optimization example is explained in the [getting started](https://www.gurobi.com/documentation/9.0/quickstart_linux/py_simple_python_example.html)
 
 
