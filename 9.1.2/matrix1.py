@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.7
 
-# Copyright 2020, Gurobi Optimization, LLC
+# Copyright 2021, Gurobi Optimization, LLC
 
 # This example formulates and solves the following simple MIP model
 # using the matrix API:
@@ -20,24 +20,27 @@ import os
 
 try:
 
-    # Get environment variables
+    # Setup the Gurobi environment with the WLS license
     e = gp.Env(empty=True)
 
-    wlsaccessID = os.getenv('GRB_WLSACCESSID','')
+    wlsaccessID = os.getenv('GRB_WLSACCESSID','undefined')
     e.setParam('WLSACCESSID', wlsaccessID)
 
-    licenseID = os.getenv('GRB_LICENSEID', '')
+    licenseID = os.getenv('GRB_LICENSEID', '0')
     e.setParam('LICENSEID', int(licenseID))
 
-    wlsSecrets = os.getenv('GRB_WLSSECRET','')
+    wlsSecrets = os.getenv('GRB_WLSSECRET','undefined')
     e.setParam('WLSSECRET', wlsSecrets)
+
+    e.setParam('CSCLIENTLOG', int(3))
 
     e.start()
 
 
+    # Create the model within the Gurobi environment
     m = gp.Model(env=e, name="matrix1")
 
-     # Create variables
+    # Create variables
     x = m.addMVar(shape=3, vtype=GRB.BINARY, name="x")
 
     # Set objective

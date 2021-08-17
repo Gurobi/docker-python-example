@@ -6,7 +6,7 @@ Where to get help: [Gurobi Support](https://www.gurobi.com/support/), [Gurobi Do
 
 # Supported tags and respective Dockerfile links
 
-* [9.1.2, latest](https://github.com/Gurobi/docker-python-/blob/master/9.1.2/Dockerfile)
+* [9.1.2, latest](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/Dockerfile)
 
 
 When building a production application, we recommend using an explicit version number instead of the `latest` tag.
@@ -27,7 +27,12 @@ The Gurobi Optimizer comes with a Python extension module called “gurobipy” 
 object-oriented modeling constructs and an API to all Gurobi features. 
 More info in the [Quick Start Guide](https://www.gurobi.com/documentation/current/quickstart_windows/cs_python.html).
 
-The `gurobi/python-example` image provides an example to use the `gurobi/python` as a base Docker image.
+The `gurobi/python-example` image provides a simple example to use the `gurobi/python` as a base Docker image with the 
+Gurobi Web License Service:
+- The docker used to build this image gives a quick example of a [Dockerfile](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/Dockerfile)
+- The [code](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/matrix1.py)) in Python setup the WLS license 
+- The optimization example is explained in the [getting started](https://www.gurobi.com/documentation/9.0/quickstart_linux/py_simple_python_example.html)
+
 
 ## Getting a Gurobi license
 
@@ -49,6 +54,17 @@ This images has been created to pass the license information in the following en
 
 # How to use this image?
 
+Running the example is quick and easy, you just need to pass the WLS license information as 
+environment variables on the command line of docker.
+
+```console
+$ docker run -e GRB_WLSACCESSID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx \
+             -e GRB_WLSSECRET=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx \
+             -e GRB_LICENSEID=99999 \
+             gurobi/python-example
+```
+
+In the same way, you can run this image in various environments such as Microsoft Azure Batch.
 
 # License
 
