@@ -18,6 +18,14 @@ Supported architectures: linux amd64
 
 Published image artifact details: https://github.com/Gurobi/docker-python-example
 
+Gurobi images available on DockerHub:
+- [gurobi/optimizer](https://hub.docker.com/r/gurobi/optimizer): Gurobi Optimizer (full distribution)
+- [gurobi/python](https://hub.docker.com/r/gurobi/python): Gurobi Optimizer (Python API only)
+- [gurobi/python-example](https://hub.docker.com/r/gurobi/python-example): Gurobi Optimizer example in Python
+- [gurobi/modeling-examples](https://hub.docker.com/r/gurobi/modeling-examples): Optimization modeling examples (distributed as Jupyter Notebooks)
+- [gurobi/compute](https://hub.docker.com/r/gurobi/compute): Gurobi Compute Server
+- [gurobi/manager](https://hub.docker.com/r/gurobi/manager): Gurobi Cluster Manager
+
 # What is `gurobi/python-example`?
 The Gurobi Optimizer is the fastest and most powerful mathematical programming solver available 
 for your LP, QP and MIP (MILP, MIQP, and MIQCP) problems. 
@@ -47,7 +55,7 @@ Please contact your sales representative at [sales@gurobi.com](mailto:sales@guro
 
 ## Using the client license
 
-This images has been created to pass the license information in the following environment variables:
+This image has been created to pass the license information in the following environment variables:
 * GRB_WLSACCESSID: Access ID for Gurobi Web License Service
 * GRB_WLSSECRET: Secret Key for Gurobi Web License Service
 * GRB_LICENSEID: License ID for Gurobi Web License Service
@@ -64,7 +72,7 @@ $ docker run -e GRB_WLSACCESSID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx \
              gurobi/python-example
 ```
 
-In the same way, you can run this image in various environments such as Microsoft Azure Batch.
+In the same way, you can run this image in various containerized environments.
 
 # License
 
