@@ -35,7 +35,7 @@ The Gurobi Optimizer comes with a Python extension module called “gurobipy” 
 object-oriented modeling constructs and an API to all Gurobi features. 
 More info in the [Quick Start Guide](https://www.gurobi.com/documentation/current/quickstart_windows/cs_python.html).
 
-The `gurobi/python-example` image provides a simple example to use the `gurobi/python` as a base Docker image with the 
+The `gurobi/python-example` image provides a simple example to use `gurobi/python` as a base Docker image with the 
 Gurobi Web License Service:
 - The docker used to build this image gives a quick example of a [Dockerfile](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/Dockerfile)
 - The [code](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/matrix1.py) in Python sets up the WLS license 
@@ -45,11 +45,11 @@ Gurobi Web License Service:
 ## Getting a Gurobi license
 
 This image has been created to work with a Web License. The [Web License Service](https://www.gurobi.com/web-license-service/) (WLS) is a new Gurobi licensing service 
-  for containerized environments (Docker, Kubernetes...). Gurobi components can automatically request and renew license tokens to 
+  for containerized environments (Docker, Kubernetes, ...). Gurobi components can automatically request and renew license tokens to 
   the WLS servers available in several regions worldwide. WLS only requires that your container has access to the 
   Internet. Commercial users can request an evaluation and academic users can request a free license.
   Please register to access the [Web License Manager](https://license.gurobi.com) and read the
-  [documentation](https://license.gurobi.com/manager/doc/overview)
+  [documentation](https://license.gurobi.com/manager/doc/overview).
 
 Please contact your sales representative at [sales@gurobi.com](mailto:sales@gurobi.com) to discuss licensing options. 
 
