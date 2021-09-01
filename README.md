@@ -21,7 +21,7 @@ Published image artifact details: https://github.com/Gurobi/docker-python-exampl
 Gurobi images available on DockerHub:
 - [gurobi/optimizer](https://hub.docker.com/r/gurobi/optimizer): Gurobi Optimizer (full distribution)
 - [gurobi/python](https://hub.docker.com/r/gurobi/python): Gurobi Optimizer (Python API only)
-- [gurobi/python-example](https://hub.docker.com/r/gurobi/python-example): Gurobi Optimizer example in Python
+- [gurobi/python-example](https://hub.docker.com/r/gurobi/python-example): Gurobi Optimizer example in Python with a WLS license
 - [gurobi/modeling-examples](https://hub.docker.com/r/gurobi/modeling-examples): Optimization modeling examples (distributed as Jupyter Notebooks)
 - [gurobi/compute](https://hub.docker.com/r/gurobi/compute): Gurobi Compute Server
 - [gurobi/manager](https://hub.docker.com/r/gurobi/manager): Gurobi Cluster Manager
@@ -44,7 +44,7 @@ Gurobi Web License Service:
 
 ## Getting a Gurobi license
 
-This image has been created to work with a Web License. The [Web License Service](https://www.gurobi.com/web-license-service/) (WLS) is a new Gurobi licensing service 
+This image has been created to work with a Web License. The [Web License Service](https://www.gurobi.com/web-license-service/) (WLS) is a Gurobi licensing service 
   for containerized environments (Docker, Kubernetes, ...). Gurobi components can automatically request and renew license tokens to 
   the WLS servers available in several regions worldwide. WLS only requires that your container has access to the 
   Internet. Commercial users can request an evaluation and academic users can request a free license.
