@@ -1,4 +1,4 @@
-FROM gurobi/python:9.1.2
+FROM gurobi/python:9.5.0beta
 
 # Set the application directory
 WORKDIR /app
