@@ -6,7 +6,7 @@ Where to get help: [Gurobi Support](https://www.gurobi.com/support/), [Gurobi Do
 
 # Supported tags and respective Dockerfile links
 
-* [9.1.2, latest](https://github.com/Gurobi/docker-python-example/blob/master/9.1.2/Dockerfile)
+* [9.5.0, latest](https://github.com/Gurobi/docker-python-example/blob/master/9.5.0/Dockerfile)
 
 
 When building a production application, we recommend using an explicit version number instead of the `latest` tag.
