@@ -1,4 +1,4 @@
-FROM gurobi/python:13.0.0_3.10beta1
+FROM gurobi/python:13.0.0_3.10
 
 # Set the application directory
 WORKDIR /app
